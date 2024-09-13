@@ -1,24 +1,64 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Archivo:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 :root {
-  --brand-color: #846AFF;
-  --dark-10: #121214;
-  --dark-20: #7C7C8A;
-  --dark-30: #EAEAEA;
-  --dark-40: #EEEEFF;
-  --dark-50: #F8F8FF;
-  --dark-60: #FFFFFF;
-  --roboto: "Roboto"
+  --brand-color: #F1A5B1;
+  --dark-10: #0B0A0A;
+  --dark-20: #FFFFFF;
+  --archivo: "Archivo";
+  --andada: "Andada Pro";
+  --roboto: "Roboto";
 }
 
 * {
+  box-sizing: border-box;
+  color: var(--dark-20);
+  font-family: var(--archivo), sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-body,button {
-  font-family: "Roboto", sans-serif;
+body {
+  background: url("/src/assets/background.png");
+  background-repeat: no-repeat;
+  
+  background-size: cover;
+  font-family: var(--archivo), sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
+  height: 100vh;
+  margin: 0;
+
+  @media screen and (max-width: 1024px) {
+    background-position-x: -600px;
+  }
+
+  input[type="email"],
+  input[type="password"] {
+    background-color: #F7FAFC;
+    max-width: 400px;
+    width: 100%;
+    padding: 16px 0px 16px 16px;
+    border-radius: 4px;
+    border: 1px solid #E8E8E8;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 15.23px;
+      text-align: left;
+    }
+
+    &::placeholder {
+      color: var(--dark-20);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 17.41px;
+      text-align: left;
+
+    }
+
+
+  }
 }
