@@ -15,32 +15,32 @@ const pizzas: Pizza[] = [
     name: "La Cuma",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "R$ 29,90",
-    imageUrl: "./src/assets/pizza1.png",
-    favoriteIconUrl: "./src/assets/icon-favorite.png"
+    imageUrl: "/pizza1.png",
+    favoriteIconUrl: "/icon-favorite.png"
   },
   {
     id: 2,
     name: "La Cuma",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "R$ 29,90",
-    imageUrl: "./src/assets/pizza1.png",
-    favoriteIconUrl: "./src/assets/icon-favorite.png"
+    imageUrl: "/pizza1.png",
+    favoriteIconUrl: "/icon-favorite.png"
   },
   {
     id: 3,
     name: "La Cuma",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "R$ 29,90",
-    imageUrl: "./src/assets/pizza1.png",
-    favoriteIconUrl: "./src/assets/icon-favorite.png"
+    imageUrl: "/pizza1.png",
+    favoriteIconUrl: "/icon-favorite.png"
   },
   {
     id: 4,
     name: "La Cuma",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     price: "R$ 29,90",
-    imageUrl: "./src/assets/pizza1.png",
-    favoriteIconUrl: "./src/assets/icon-favorite.png"
+    imageUrl: "/pizza1.png",
+    favoriteIconUrl: "/icon-favorite.png"
   }
 ];
 
@@ -48,7 +48,7 @@ const App: React.FC = () => {
   return (
     <div className="laPizza">
       <header className="laPizza__header">
-        <img className="laPizza__logo" src="/src/assets/logo.png" alt="Logo da La Pizza" />
+        <img className="laPizza__logo" src="/logo.png" alt="Logo da La Pizza" />
       </header>
       <main className="laPizza__main">
         <div className="laPizza__content">
@@ -69,7 +69,7 @@ const App: React.FC = () => {
       </main>
       <footer className="laPizza__footer">
         <div className="laPizza__footerContent">
-          <img src="./src/assets/image-footer.png" className="laPizza__footerImage" alt="Imagem do rodapé" />
+          <img src="./image-footer.png" className="laPizza__footerImage" alt="Imagem do rodapé" />
           <div className="laPizza__footerText">
             <h3 className="laPizza__footerTitle">Sobre a La Pizza</h3>
             <p className="laPizza__footerDescription">Bem-vindo ao "La Pizza", o seu refúgio acolhedor para uma experiência de pizzaria autêntica. Em nosso pequeno oásis italiano, cada pedaço de pizza é uma obra-prima artesanal. Sinta-se em casa enquanto o aroma sedutor de massa fresca assa no forno, criando as pizzas mais deliciosas da cidade.</p>
