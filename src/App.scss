@@ -1,212 +1,167 @@
-.studio {
+.laPizza {
+  align-items: center;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   width: 100%;
-
-  &__container {
-    max-width: 1216px;
-    padding: 0 23px;
-    width: 100%;
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      align-items: center;
-    }
-  }
 
   &__header {
     align-items: center;
+    background: url('./assets/bg.png');
+    background-position: center;
     display: flex;
-    justify-content: space-between;
-    margin: 48px 0;
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      margin: 32px 0;
-    }
-
-    @media screen and (max-width: 768px) {
-      justify-content: center;
-    }
-
+    justify-content: center;
+    height: 600px;
+    width: 100%;
   }
 
   &__logo {
-    cursor: pointer;
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      max-width: 135px;
-    }
-
-
+    max-width: 596px;
+    height: 394px;
+    width: 100%;
   }
 
-  &__illustration {
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      max-width: 327px;
-      margin-bottom: 24px;
-      width: 100%;
-    }
-
-    @media screen and (max-width: 768px) {
-      margin-bottom: 24px;
-      max-width: 250px;
-    }
-  }
-
-  &__menu {
-    align-items: center;
+  &__main {
+    background-color: #fdf9ef;
     display: flex;
-    gap: 24px;
-    list-style-type: none;
-    text-decoration: none;
-
-    @media screen and (max-width: 768px) {
-      display: none;
-    }
-
-    img {
-      background-color: #FFFFFF33;
-      border: 1px solid #FFFFFF;
-      border-radius: 50%;
-      padding: 12px;
-
-      @media screen and (min-width: 768px) and (max-width: 1024px) {
-        padding: 7.67px;
-      }
-    }
+    justify-content: center;
+    width: 100%
   }
 
   &__content {
+    align-items: center;
     display: flex;
-    justify-content: space-between;
-    margin-top: 144px;
-
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      align-items: center;
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: 80px;
-    }
-
-    @media screen and (max-width: 768px) {
-      align-items: center;
-      display: flex;
-      flex-direction: column-reverse;
-      margin-top: 80px;
-    }
-  }
-
-  &__text {
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
-      max-width: 448px;
-      width: 100%;
-    }
-  }
-
-  &__author {
-    color: var(--dark-20);
-    font-family: 'Open Sans';
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27.24px;
-    text-align: left;
-
-    @media screen and (max-width: 1024px) {
-      font-size: 16px;
-      font-weight: 700;
-      line-height: 21.79px;
-      text-align: left;
-
-    }
+    flex-direction: column;
+    padding: 144px 0;
+    justify-content: center;
+    width: 100%;
   }
 
   &__title {
-    color: var(--dark-20);
-    font-family: var(--andada);
-    font-size: 64px;
-    font-weight: 800;
-    line-height: 70.4px;
-    margin-bottom: 32px;
-    margin-top: 8px;
-    max-width: 430px;
-    text-align: left;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48.41px;
+    margin-bottom: 94px;
+    text-align: right;
+  }
+
+  &__pizzas {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1237px;
+    width: 100%;
+  }
+
+  &__pizza {
+    align-items: center;
+    background-color: var(--dark-20);
+    border: 2px solid #FFF5DE;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 16px;
+    height: 300px;
+    max-width: 280px;
+    position: relative;
     width: 100%;
 
-    @media screen and (max-width: 1024px) {
-      font-size: 40px;
-      font-weight: 800;
-      line-height: 44px;
-      text-align: left;
-
+    &-image {
+      position: absolute;
+      top: -55px;
     }
-  }
 
-  &__description {
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 36px;
-    margin-bottom: 48px;
-    max-width: 488px;
-    text-align: left;
+    &-favorite {
+      cursor: pointer;
+      position: absolute;
+      top: -15px;
+      right: 16px;
+    }
 
-    @media screen and (min-width: 768px) and (max-width: 1024px) {
+    &-title {
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 24.2px;
+      text-align: center;
+    }
+
+    &-description {
       font-size: 16px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 24px;
       text-align: center;
-      max-width: max-content;
     }
 
-    @media screen and (max-width: 768px) {
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-      text-align: left;
-      max-width: max-content;
-    }
-  }
-
-  &__buttons {
-    display: flex;
-    gap: 32px;
-
-    @media screen and (max-width: 1024px) {
-      flex-direction: column;
+    &-price {
+      font-size: 32px;
+      font-weight: 700;
+      line-height: 38.73px;
+      text-align: center;
     }
 
-    button {
-      border-radius: 4px;
+    &-button {
+      background-color: var(--brand-color);
+      border-radius: 25px;
+      border: 0px;
       cursor: pointer;
-      font-family: var(--roboto);
-      padding: 14px 32px;
+      bottom: -20px;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16.94px;
+      padding: 12px 40px;
+      position: absolute;
       text-transform: uppercase;
-
-      @media screen and (max-width: 1024px) {
-        align-items: center;
-        display: flex;
-        justify-content: center;
-      }
     }
   }
 
-  &__now {
-    background-color: var(--brand-color);
-    color: var(--dark-10);
+  &__footer {
+    background-color: var(--dark-20);
+    border-top: 1px solid var(--brand-color);
     display: flex;
-    gap: 8px;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.09px;
-    text-align: center;
-
+    justify-content: center;
+    padding: 64px 0;
+    width: 100%;
   }
 
-  &__trailer {
-    border: var(--brand-color) solid 2px;
-    background-color: transparent;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 21.09px;
-    text-align: center;
+  &__footerContent {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1216px;
+    gap: 136px;
+    width: 100%;
+  }
 
+  &__footerTitle {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.57px;
+    text-align: left;
+  }
+
+  &__footerDescription {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+  }
+
+  &__footerButton {
+    background-color: var(--brand-color);
+    border-radius: 25px;
+    border: 0px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 16.94px;
+    max-width: 195px;
+    width: 100%;
+    padding: 12px 40px;
+    text-transform: uppercase;
+  }
+
+  &__footerText {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
   }
 }
