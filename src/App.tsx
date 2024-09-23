@@ -71,7 +71,7 @@ const App: React.FC = () => {
         <div className="laPizza__footerContent">
           <img src="./image-footer.png" className="laPizza__footerImage" alt="Imagem do rodapé" />
           <div className="laPizza__footerText">
-            <h3 className="laPizza__footerTitle">Sobre a La Pizza</h3>
+            <h3 className="laPizza__footerTitle">Sobre a La P<span className="laPizza--yellow">i</span><span className="laPizza--red" >z</span><span className="laPizza--green" >z</span>a</h3>
             <p className="laPizza__footerDescription">Bem-vindo ao "La Pizza", o seu refúgio acolhedor para uma experiência de pizzaria autêntica. Em nosso pequeno oásis italiano, cada pedaço de pizza é uma obra-prima artesanal. Sinta-se em casa enquanto o aroma sedutor de massa fresca assa no forno, criando as pizzas mais deliciosas da cidade.</p>
             <button className="laPizza__footerButton">Ler mais sobre</button>
           </div>

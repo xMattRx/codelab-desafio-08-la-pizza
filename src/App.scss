@@ -4,6 +4,18 @@
   flex-direction: column;
   width: 100%;
 
+  &--yellow {
+    color: var(--brand-color);
+  }
+
+  &--red {
+    color: var(--dark-40);
+  }
+
+  &--green {
+    color: var(--dark-50);
+  }
+
   &__header {
     align-items: center;
     background: url('/bg.png');
@@ -18,6 +30,16 @@
     max-width: 596px;
     height: 394px;
     width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      max-width: 300px;
+      height: 198px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 216px;
+      height: 143px;
+    }
   }
 
   &__main {
@@ -31,9 +53,13 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 144px 0;
+    padding: 144px 24px;
     justify-content: center;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      padding: 64px 24px;
+    }
   }
 
   &__title {
@@ -42,13 +68,44 @@
     line-height: 48.41px;
     margin-bottom: 94px;
     text-align: right;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      font-size: 36px;
+      font-weight: 600;
+      line-height: 43.57px;
+      text-align: right;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 29.05px;
+      text-align: right;
+    }
   }
 
   &__pizzas {
     display: flex;
-    justify-content: space-between;
-    max-width: 1237px;
+    gap: 39px;
+    max-width: 1285px;
     width: 100%;
+
+    @media screen and (min-width: 768px) and (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 108px;
+      column-gap: 32px;
+      justify-items: center;
+      align-items: center;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      align-items: center;
+      gap: 99px;
+    }
   }
 
   &__pizza {
@@ -64,6 +121,10 @@
     max-width: 280px;
     position: relative;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      max-width: 324px;
+    }
 
     &-image {
       position: absolute;
@@ -82,6 +143,7 @@
       font-weight: 700;
       line-height: 24.2px;
       text-align: center;
+
     }
 
     &-description {
@@ -126,9 +188,15 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
-    max-width: 1216px;
+    max-width: 1285px;
+    padding: 0 24px;
     gap: 136px;
     width: 100%;
+
+    @media screen and (max-width: 768px) {
+      gap: 64px;
+      flex-direction: column;
+    }
   }
 
   &__footerTitle {
@@ -136,6 +204,10 @@
     font-weight: 600;
     line-height: 43.57px;
     text-align: left;
+  }
+
+  &__footerImage {
+    width: 100%;
   }
 
   &__footerDescription {
@@ -153,7 +225,7 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 16.94px;
-    max-width: 195px;
+    max-width: 197px;
     width: 100%;
     padding: 12px 40px;
     text-transform: uppercase;
