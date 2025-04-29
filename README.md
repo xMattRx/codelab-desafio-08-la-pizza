@@ -63,7 +63,8 @@ Este repositório contém a solução para o **Desafio 08** do curso **CodeLab**
 
 ## 📸 Preview
 
-![image](https://github.com/user-attachments/assets/5aef93ed-d121-40eb-84be-6973d18700e7)
+![image](https://github.com/user-attachments/assets/54ea89da-fb8c-4d09-8fd3-7c36c0d40e8b)
+
 
 ---
 
