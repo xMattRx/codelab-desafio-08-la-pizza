@@ -1,50 +1,80 @@
-# React + TypeScript + Vite
+# 🍕 CodeLab - Desafio 08: La Pizza
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este repositório contém a solução para o **Desafio 08** do curso **CodeLab**, com o projeto **La Pizza**, uma landing page responsiva para uma pizzaria fictícia, com foco em layout atrativo, fidelidade ao design e boas práticas de desenvolvimento front-end.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧪 Tecnologias utilizadas
 
-## Expanding the ESLint configuration
+- [React](https://reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [SCSS (Sass)](https://sass-lang.com/)
+- [Vite](https://vitejs.dev/)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 📂 Estrutura do projeto
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```
+├── public/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.tsx
+│   └── main.tsx
+├── tsconfig.json
+├── package.json
+├── vite.config.ts
+└── README.md
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🚀 Como rodar o projeto localmente
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/codelab-desafio-08-la-pizza.git
+   ```
+
+2. Acesse a pasta do projeto:
+   ```bash
+   cd codelab-desafio-08-la-pizza
+   ```
+
+3. Instale as dependências:
+   ```bash
+   npm install
+   ```
+
+4. Inicie o servidor de desenvolvimento:
+   ```bash
+   npm run dev
+   ```
+
+5. Acesse no navegador:
+   ```
+   http://localhost:5173
+   ```
+
+---
+
+## 📸 Preview
+
+![image](https://github.com/user-attachments/assets/5aef93ed-d121-40eb-84be-6973d18700e7)
+
+---
+
+## 🎯 Objetivo do desafio
+
+Neste desafio, o foco foi construir uma landing page para uma pizzaria fictícia, com destaque para:
+
+- Fidelidade ao layout fornecido no Figma  
+- Componentização com React  
+- Tipagem com TypeScript  
+- Estilização com SCSS  
+- Design responsivo (desktop, tablet e mobile)
+
+---
